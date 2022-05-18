@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-main: #34e7e4;
+    --main-color-text: #1e272e;
+    --sub-color-text: #1e272e;
+}
+
+body {
+    background-color: var(--background-main);
+    height: 80vh;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.main-container {
+    margin-top: 50px;
+}
+
+.header > h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--main-color-text);
+    text-decoration: underline 10px dotted var(--main-color-text);
+}
+
+.dice-container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.dice-container .dice-left > h4, .dice-right > h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--main-color-text);
+}
+
+.dice-container .dice-left > img, .dice-right > img {
+    width: 200px;
+    height: 200px;
+    /* display: none; */
+}
+
+.dice-container .dice-left > h5, .dice-right > h5 {
+    font-size: 2rem;
+    color: var(--sub-color-text);
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer button {
+    padding: 20px 45px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 10px 5px 0 rgba(32, 32, 32, 0.2);
+}
+
+/* play */
+.footer button:nth-child(1) {
+    background-color: #0be881;
+    border: 1px solid white;
+    color: var(--main-color-text);
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 250ms;
+}
+.footer button:nth-child(1):hover {
+    background-color: #0be8813c;
+    border: 1px solid #0be881;
+    color: #fff;
+}
+
+/* reset */
+.footer button:nth-child(2) {
+    background-color: #f53b57;
+    border: 1px solid #ff5e57;
+    color: #d2dae2;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 250ms;
+    display: none;
+}
+.footer button:nth-child(2):hover {
+    background-color: #ff5e57;
+    border: 1px solid #f53b57;
+    color: #fff;
+}
+
+#result {
+    color: var(--main-color-text);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 50px;
+    padding: 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

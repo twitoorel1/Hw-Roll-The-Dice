@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1>Roll The Dice</h1>
+        </div>
+
+        <div class="dice-container">
+            <div class="dice-left">
+                <h4>Player One</h4>
+                <img id="dice-1" src="./img/dice-01.svg" alt="">
+                <h5>Score: <span id="score-player">0</span></h5>
+            </div>
+            <div class="dice-right">
+                <h4>Player Two</h4>
+                <img id="dice-2" src="./img/dice-04.svg" alt="">
+                <h5>score: <span id="score-computer">0</span></h5>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button id="play">Roll The Dice</button>
+            <button id="reset">Restart Dices</button>
+        </div>
+        
+        <p id="result"></p>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
